@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    'products'
+
+    'Items',
     'phonenumber_field',
     'crispy_forms', #for styling the login forms
 
@@ -133,3 +134,5 @@ STATICFILES_DIRS = (
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'homepage' #sends user to home page if login successful
 AUTH_USER_MODEL = 'users.User' #sets the authentication model to the created custom user
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR))
