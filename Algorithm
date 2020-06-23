@@ -1,0 +1,64 @@
+Seller Class - Create Seller Account:
+    1. Add products:
+        Related to products class.
+        Product class automatically takes seller business name and seller ID.
+        Fills out models for products class.
+    2. Change product name.
+    3. Change product quantity.
+    4. Add their Address.
+    5. Add name.
+    6. Add business name.
+    7. Add email.
+    8. Add profile picture.
+    9. Add services.
+    10. Add Phone number.
+    11. Get Account details and verify.
+    12. Account Password.
+    13. Username.
+    14. Encrypt Password
+    **rules: can't create account if neither service nor products are offered.
+
+Buyer Account:
+    1. Generated buyer ID.
+    2. Get Buyer Name.
+    3. Get Buyer Email.
+    4. Get Buyer Phone number.
+    5. Get Buyer Shipping Address.
+    6. Username
+    7. Password.
+    8. Encrypt password.
+
+Buyer Class:
+    1. Generated buyer ID.
+    2. Get Buyer Name.
+    3. Get Buyer Email.
+    4. Get Buyer Phone number.
+    5. Get Buyer Shipping Address.
+
+Address Class:
+    1. Street Address 1.
+    2. Street Address 2.
+    3. City.
+    4. Zipcode.
+    5. State.
+    6. Country.
+
+Product class:
+    1. ProductID.
+    2. SellerID.
+    3. Product Type.
+    4.Quantity.
+
+Transaction:
+    1. Product(s)*.
+    2. Buyer ID.
+    3. Seller ID.
+    4. Date.
+    5. Review*.
+
+Review:
+    1. Description.
+    2. Rating.
+    3. Buyer.
+
+
