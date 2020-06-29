@@ -2,15 +2,17 @@ from django import forms
 from .models import User
 from django.db import models
 from django.core.exceptions import ValidationError
-userchoices = (("Buyer","Buyer"), ("Seller","Seller"), ("Both","Both")) #choices of type of user
+userchoices = (("Buyer","Buyer"), ("Seller","Seller")) #choices of type of user
 #model1 = get_user_model()  # form is based on a basic django created user model
 
-
+#Sign up form
 class RegisterNewUser(forms.ModelForm):
+
+    #password and confinmation
     password1 = forms.CharField(widget=forms.PasswordInput)
     password2 = forms.CharField(label='confirm password',widget=forms.PasswordInput)
 
-    i_am_a = forms.ChoiceField(choices=userchoices)
+    i_am_a = forms.ChoiceField(choices=userchoices) #classifcation of registering entity
     def clean_email(self):
         email = self.cleaned_data.get('email')
         exist = User.objects.filter(email=email)
@@ -32,8 +34,14 @@ class RegisterNewUser(forms.ModelForm):
         if commit:
             user.save()
         return user
+
+    ##lool create  a child class for seller bro
     if i_am_a == 'Seller':
         User.seller = True
+        class Meta:
+            model = User
+            fields = ['first_name', 'last_name', 'email', 'i_am_a','company_name']
+
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email', 'i_am_a']

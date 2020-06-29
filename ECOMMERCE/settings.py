@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users',
+    'ecommerce', #this app takes care of the homepage and I intend to make it the connector of other apps if need be
+    'users',  #this app takes care of what django.contib.auth does
 
-    'Items',
+    'Items',  #quite obvious what this is
     'phonenumber_field',
     'crispy_forms', #for styling the login forms
 
@@ -131,7 +132,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'  #very useful for styling forms
 LOGIN_REDIRECT_URL = 'homepage' #sends user to home page if login successful
 AUTH_USER_MODEL = 'users.User' #sets the authentication model to the created custom user
 MEDIA_URL = '/media/'

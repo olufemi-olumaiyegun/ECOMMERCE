@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin,auth
 from django.urls import path,include
-
+from Items import views as item_view
 from users import views as user_views
 from ecommerce import views as ecommerce_views
 from django.contrib.auth import views as authentication_views
@@ -24,6 +24,7 @@ urlpatterns = [
     path('register/', user_views.register,name="register"), #for the registration page
     path('homepage/', ecommerce_views.homepage, name="homepage"),
     path('', ecommerce_views.homepage),
+   # path('product',item_view.post,name="uploadproduct"),
     path('accounts/sign-in/', authentication_views.LoginView.as_view(template_name='login.html'),name="signin"), #for sign in page
     #path('accounts/',include('django.contrib.auth.urls'), name='accounts'),
   #  path('logout/', authentication_views.LoginView.as_view(template_name='logout.html'), name="logout"),

@@ -48,6 +48,7 @@ class User(AbstractBaseUser):
     seller = models.BooleanField(default=False)  #whether user will be making sales on the site
     first_name = models.CharField(max_length=70,blank=True)
     last_name = models.CharField(max_length=70,blank=True)
+    company_name = models.CharField(max_length=150, blank=True,null=True)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
     timestamp = models.DateTimeField(auto_now_add=True)
