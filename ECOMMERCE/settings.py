@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ecommerce', #this app takes care of the homepage and I intend to make it the connector of other apps if need be
     'users',  #this app takes care of what django.contib.auth does
 
     'Items',  #quite obvious what this is

@@ -17,7 +17,7 @@ from django.contrib import admin,auth
 from django.urls import path,include
 from Items import views as item_view
 from users import views as user_views
-from ecommerce import views as ecommerce_views
+from . import views as ecommerce_views
 from django.contrib.auth import views as authentication_views
 urlpatterns = [
     path('admin/', admin.site.urls),
