@@ -1,6 +1,5 @@
 <h2>Ecommerce Project for 2020 Summer. Made using Jquery, Django, Python, HTML,CSS, and BOOTSTRAP</h2>
-
-<div style="background-color:yellow">
+<p>This project is a starter Django server image for implementing ecommerce websites. This is one of many templates and is an open source project in progress</p>
 
 <h1> Follow the next steps to run the test server in your environment</h1>
 <ul>
@@ -15,4 +14,3 @@
 	<li>Run the command, "python3 manage.py runserver"</li>
 	<li>In a web browser, navigate to "localhost:8000"</li>
 </ul>
-</div>
