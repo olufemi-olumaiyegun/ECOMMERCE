@@ -1,6 +1,6 @@
 <h2>Ecommerce Project for 2020 Summer. Made using Jquery, Django, Python, HTML,CSS, and BOOTSTRAP</h2>
 
-
+<div style="background-color:yellow">
 
 <h1> Follow the next steps to run the test server in your environment</h1>
 <ul>
@@ -15,3 +15,4 @@
 	<li>Run the command, "python3 manage.py runserver"</li>
 	<li>In a web browser, navigate to "localhost:8000"</li>
 </ul>
+</div>
