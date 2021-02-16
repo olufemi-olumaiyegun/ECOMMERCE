@@ -4,7 +4,7 @@
 
 <h1> Follow the next steps to run the test server in your environment</h1>
 <ul>
-	<li>Open a shell environment<li>	
+	<li>Open a shell environment</li>	
 	<li>In the environment, run the command "git clone https://github.com/olufemi-olumaiyegun/ECOMMERCE.git"</li>
 </ul>
 
