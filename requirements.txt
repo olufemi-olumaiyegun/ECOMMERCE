@@ -87,7 +87,7 @@ isort @ file:///tmp/build/80754af9/isort_1602603989581/work
 itsdangerous==1.1.0
 jdcal==1.4.1
 jedi==0.18.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
 json5==0.9.5
 jsonfield==3.1.0
